@@ -1,7 +1,7 @@
 #drawboard {
     display: grid;
-    grid-template-columns: repeat(4, 20px);
-    grid-template-rows: repeat(4, 20px);
+    grid-template-columns: repeat(16, 20px);
+    grid-template-rows: repeat(16, 20px);
 }
 
 #drawboard > div {
