@@ -4,7 +4,7 @@
 - [x] Cell sizes change to keep total board size the same
 - [x] Only fill in cells on mousedown
 - [ ] Resize canvas slider
-- [ ] Select color to use 
+- [x] Select color to use 
 - [x] Fill cell animation
 - [ ] Support color randomizer
 

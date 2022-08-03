@@ -1,6 +1,9 @@
 const $ = (q) => document.querySelector(q);
 const $$ = (q) => document.querySelectorAll(q);
 
+const gameboyColors = ["#9bbc0f", "#8bac0f", "#306230", "#0f380f"];
+var curColor = gameboyColors[3];
+
 var mouseDown = 0;
 document.body.onmouseup = () => {
   mouseDown = 0;
@@ -19,11 +22,11 @@ function fillBoard(nRows, nCols) {
     let cell = document.createElement("button");
     cell.setAttribute("draggable", false);
     cell.addEventListener("mouseover", function (e) {
-      if (mouseDown > 0) this.style.backgroundColor = "#0f380f";
+      if (mouseDown > 0) this.style.backgroundColor = curColor;
     });
     cell.addEventListener("mousedown", function (e) {
       mouseDown = 1;
-      this.style.backgroundColor = "#0f380f";
+      this.style.backgroundColor = curColor;
     });
     $("#drawboard").appendChild(cell);
   }
@@ -37,4 +40,12 @@ $("#resize-button").addEventListener("click", function (e) {
     size = +prompt("Enter board size: ");
   } while (isNaN(size));
   fillBoard(size, size);
+});
+
+$$("#color-select>button").forEach((colorButton) => {
+  const colorKey = colorButton.getAttribute("key-value");
+  colorButton.style.backgroundColor = gameboyColors[colorKey];
+  colorButton.addEventListener("click", (e) => {
+    curColor = gameboyColors[colorKey];
+  });
 });
