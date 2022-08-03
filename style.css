@@ -11,12 +11,15 @@ body {
 }
 
 #drawboard {
+    border: 2px solid black;
     display: grid;
     grid-template-columns: repeat(16, 20px);
     grid-template-rows: repeat(16, 20px);
 }
 
 #drawboard > button {
-    border: 1px solid gray;
+    border-radius: 0px;
+    border: 0px;
+    padding: 0px;
     transition: all 0.3s;
 }
