@@ -49,3 +49,9 @@ $$("#color-select>button").forEach((colorButton) => {
     curColor = gameboyColors[colorKey];
   });
 });
+
+$("#clear-button").addEventListener("click", (e) => {
+  $$("#drawboard>button").forEach((cell) => {
+    cell.style.backgroundColor = gameboyColors[0];
+  });
+});
