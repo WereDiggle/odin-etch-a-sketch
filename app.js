@@ -20,8 +20,9 @@ function fillBoard(nRows, nCols) {
 fillBoard(16, 16);
 
 $("#resize-button").addEventListener("click", function (e) {
-  let sizeStr = prompt("Enter board size: {rows},{cols}");
-  let [nRows, nCols] = sizeStr.split(",");
-  console.log(`${nRows}, ${nCols}`);
-  fillBoard(nRows, nCols);
+  let size;
+  do {
+    size = +prompt("Enter board size: ");
+  } while (isNaN(size));
+  fillBoard(size, size);
 });
