@@ -8,7 +8,7 @@ document.body.onmouseup = () => {
 
 function fillBoard(nRows, nCols) {
   // Clear old cells
-  $$("#drawboard>div").forEach((cell) => $("#drawboard").removeChild(cell));
+  $$("#drawboard>button").forEach((cell) => $("#drawboard").removeChild(cell));
 
   // Add new cells
   // TOTAL width/height = 500
