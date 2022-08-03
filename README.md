@@ -7,6 +7,7 @@
 - [x] Select color to use 
 - [x] Fill cell animation
 - [ ] Support color randomizer
+- [ ] Clear button clears board
 
 ## TODO: design
 - [ ] Resize padding
