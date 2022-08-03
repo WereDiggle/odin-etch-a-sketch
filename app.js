@@ -6,8 +6,10 @@ function fillBoard(nRows, nCols) {
   $$("#drawboard>div").forEach((cell) => $("#drawboard").removeChild(cell));
 
   // Add new cells
-  $("#drawboard").style.gridTemplateColumns = `repeat(${nCols}, 20px)`;
-  $("#drawboard").style.gridTemplateRows = `repeat(${nRows}, 20px)`;
+  // TOTAL width/height = 500
+  let cellSize = Math.floor(500 / nRows);
+  $("#drawboard").style.gridTemplateColumns = `repeat(${nCols}, ${cellSize}px)`;
+  $("#drawboard").style.gridTemplateRows = `repeat(${nRows}, ${cellSize}px)`;
   for (let i = 0; i < nRows * nCols; i++) {
     let cell = document.createElement("div");
     cell.addEventListener("mouseover", function (e) {

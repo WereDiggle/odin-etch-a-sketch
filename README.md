@@ -1,7 +1,7 @@
 # odin-etch-a-sketch
 
 ## TODO
-- [ ] Cell sizes change to keep total board size the same
+- [x] Cell sizes change to keep total board size the same
 - [ ] Only fill in cells on mousedown
 - [ ] Improved layout
 - [ ] Resize canvas slider
