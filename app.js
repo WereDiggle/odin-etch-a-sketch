@@ -2,9 +2,6 @@ const $ = (q) => document.querySelector(q);
 const $$ = (q) => document.querySelectorAll(q);
 
 var mouseDown = 0;
-document.body.onmousedown = () => {
-  mouseDown = 1;
-};
 document.body.onmouseup = () => {
   mouseDown = 0;
 };
@@ -22,8 +19,11 @@ function fillBoard(nRows, nCols) {
     let cell = document.createElement("button");
     cell.setAttribute("draggable", false);
     cell.addEventListener("mouseover", function (e) {
-      console.log(mouseDown);
       if (mouseDown > 0) this.style.backgroundColor = "cyan";
+    });
+    cell.addEventListener("mousedown", function (e) {
+      mouseDown = 1;
+      this.style.backgroundColor = "cyan";
     });
     $("#drawboard").appendChild(cell);
   }
