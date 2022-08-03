@@ -1,6 +1,14 @@
 const $ = (q) => document.querySelector(q);
 const $$ = (q) => document.querySelectorAll(q);
 
+var mouseDown = 0;
+document.body.onmousedown = () => {
+  mouseDown = 1;
+};
+document.body.onmouseup = () => {
+  mouseDown = 0;
+};
+
 function fillBoard(nRows, nCols) {
   // Clear old cells
   $$("#drawboard>div").forEach((cell) => $("#drawboard").removeChild(cell));
@@ -13,7 +21,8 @@ function fillBoard(nRows, nCols) {
   for (let i = 0; i < nRows * nCols; i++) {
     let cell = document.createElement("div");
     cell.addEventListener("mouseover", function (e) {
-      this.style.backgroundColor = "cyan";
+      console.log(mouseDown);
+      if (mouseDown > 0) this.style.backgroundColor = "cyan";
     });
     $("#drawboard").appendChild(cell);
   }

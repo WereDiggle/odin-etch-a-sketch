@@ -2,7 +2,7 @@
 
 ## TODO
 - [x] Cell sizes change to keep total board size the same
-- [ ] Only fill in cells on mousedown
+- [x] Only fill in cells on mousedown
 - [ ] Improved layout
 - [ ] Resize canvas slider
 - [ ] Select color to use 
