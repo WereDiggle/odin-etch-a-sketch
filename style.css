@@ -18,4 +18,5 @@ body {
 
 #drawboard > div {
     border: 1px solid gray;
+    transition: all 0.3s;
 }
