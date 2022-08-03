@@ -1,4 +1,5 @@
 const $ = (q) => document.querySelector(q);
+const $$ = (q) => document.querySelectorAll(q);
 
 function fillBoard(nRows, nCols) {
   $("#drawboard").style.gridTemplateColumns = `repeat(${nCols}, 20px)`;
@@ -9,4 +10,10 @@ function fillBoard(nRows, nCols) {
   }
 }
 
-fillBoard(16, 32);
+fillBoard(16, 16);
+
+$$("#drawboard>div").forEach((cell) =>
+  cell.addEventListener("mouseover", function (e) {
+    this.style.backgroundColor = "cyan";
+  })
+);

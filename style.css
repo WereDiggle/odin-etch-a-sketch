@@ -5,6 +5,5 @@
 }
 
 #drawboard > div {
-    background-color: aqua;
     border: 1px solid gray;
 }
