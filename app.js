@@ -12,18 +12,18 @@ function fillBoard(nRows, nCols) {
 
   // Add new cells
   // TOTAL width/height = 500
-  let cellSize = Math.floor(500 / nRows);
+  let cellSize = Math.floor(300 / nRows);
   $("#drawboard").style.gridTemplateColumns = `repeat(${nCols}, ${cellSize}px)`;
   $("#drawboard").style.gridTemplateRows = `repeat(${nRows}, ${cellSize}px)`;
   for (let i = 0; i < nRows * nCols; i++) {
     let cell = document.createElement("button");
     cell.setAttribute("draggable", false);
     cell.addEventListener("mouseover", function (e) {
-      if (mouseDown > 0) this.style.backgroundColor = "cyan";
+      if (mouseDown > 0) this.style.backgroundColor = "#0f380f";
     });
     cell.addEventListener("mousedown", function (e) {
       mouseDown = 1;
-      this.style.backgroundColor = "cyan";
+      this.style.backgroundColor = "#0f380f";
     });
     $("#drawboard").appendChild(cell);
   }

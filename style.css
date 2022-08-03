@@ -10,6 +10,23 @@ body {
     margin: 20px;
 }
 
+#chasis {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 700px;
+    box-sizing: border-box;
+    background-color: #c2bfba;
+}
+
+#face {
+    display: flex;
+    justify-content: center;
+    background-color: #8c878d;
+    box-sizing: border-box;
+    padding: 50px 100px;
+}
+
 #drawboard {
     border: 2px solid black;
     display: grid;
@@ -18,8 +35,29 @@ body {
 }
 
 #drawboard > button {
+    background-color: #9bbc0f;
     border-radius: 0px;
     border: 0px;
     padding: 0px;
     transition: all 0.3s;
+}
+
+#controls {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 200px;
+}
+
+#color-select {
+    width: 80px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.color-button {
+    width: 20px;
+    height: 20px;
 }
