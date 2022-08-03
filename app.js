@@ -19,7 +19,8 @@ function fillBoard(nRows, nCols) {
   $("#drawboard").style.gridTemplateColumns = `repeat(${nCols}, ${cellSize}px)`;
   $("#drawboard").style.gridTemplateRows = `repeat(${nRows}, ${cellSize}px)`;
   for (let i = 0; i < nRows * nCols; i++) {
-    let cell = document.createElement("div");
+    let cell = document.createElement("button");
+    cell.setAttribute("draggable", false);
     cell.addEventListener("mouseover", function (e) {
       console.log(mouseDown);
       if (mouseDown > 0) this.style.backgroundColor = "cyan";
