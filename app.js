@@ -4,10 +4,23 @@ const $$ = (q) => document.querySelectorAll(q);
 const gameboyColors = ["#9bbc0f", "#8bac0f", "#306230", "#0f380f"];
 var curColor = gameboyColors[3];
 
+function getRandColor() {
+  let index = Math.floor(Math.random() * gameboyColors.length);
+  return gameboyColors[index];
+}
+
 var mouseDown = 0;
 document.body.onmouseup = () => {
   mouseDown = 0;
 };
+
+function fillCell(cell) {
+  if (curColor === "random") {
+    cell.style.backgroundColor = getRandColor();
+  } else {
+    cell.style.backgroundColor = curColor;
+  }
+}
 
 function fillBoard(nRows, nCols) {
   // Clear old cells
@@ -22,11 +35,13 @@ function fillBoard(nRows, nCols) {
     let cell = document.createElement("button");
     cell.setAttribute("draggable", false);
     cell.addEventListener("mouseover", function (e) {
-      if (mouseDown > 0) this.style.backgroundColor = curColor;
+      if (mouseDown > 0) {
+        fillCell(this);
+      }
     });
     cell.addEventListener("mousedown", function (e) {
       mouseDown = 1;
-      this.style.backgroundColor = curColor;
+      fillCell(this);
     });
     $("#drawboard").appendChild(cell);
   }
@@ -54,4 +69,8 @@ $("#clear-button").addEventListener("click", (e) => {
   $$("#drawboard>button").forEach((cell) => {
     cell.style.backgroundColor = gameboyColors[0];
   });
+});
+
+$("#random-button").addEventListener("click", (e) => {
+  curColor = "random";
 });
