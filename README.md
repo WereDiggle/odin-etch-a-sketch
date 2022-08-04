@@ -14,11 +14,11 @@
 
 ## TODO: design
 - [x] Resize padding
-- [ ] Layout controls
+- [x] Layout controls
     - [x] arrange color buttons 2x2
     - [x] Increase size of color buttons
     - [x] Center resize slider
-    - [ ] Center random and clear buttons
+    - [x] Center random and clear buttons
 - [ ] Round bottom left corner
 - [ ] Rotate random button
 - [ ] Rotate clear button
