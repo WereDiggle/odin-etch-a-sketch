@@ -38,10 +38,10 @@
     - [x] italics for ETCH-A-SKETCH
     - [x] Adjust alignment to the left
     - [x] Adjust size of text
-- [ ] Color select buttons
+- [x] Color select buttons
     - [x] Display hand cursor on hover
-    - [ ] Add some kind of hover effect
-    - [ ] Add some kind of pressed down effect (shadows?)
+    - [x] Add some kind of hover effect
+    - [x] Add some kind of pressed down effect (shadows?)
 - [ ] Resize slider
     - [ ] Increase side
     - [ ] Change color to red
