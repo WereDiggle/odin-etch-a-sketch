@@ -1,6 +1,7 @@
 const $ = (q) => document.querySelector(q);
 const $$ = (q) => document.querySelectorAll(q);
 
+const validSizes = [8, 16, 32, 64, 128];
 const gameboyColors = ["#9bbc0f", "#8bac0f", "#306230", "#0f380f"];
 var curColor = gameboyColors[3];
 
@@ -28,7 +29,9 @@ function fillBoard(size) {
 
   // Add new cells
   // TOTAL width/height = 500
-  let cellSize = Math.floor(300 / size);
+  let cellSize = Math.floor(256 / size);
+  let remainder = 256 % size;
+  console.log(`cellSize: ${cellSize}`);
   $("#drawboard").style.gridTemplateColumns = `repeat(${size}, ${cellSize}px)`;
   $("#drawboard").style.gridTemplateRows = `repeat(${size}, ${cellSize}px)`;
   for (let i = 0; i < size * size; i++) {
@@ -47,7 +50,7 @@ function fillBoard(size) {
   }
 }
 
-const initialSize = $("#resize-slider").value;
+const initialSize = validSizes[$("#resize-slider").value];
 fillBoard(initialSize, initialSize);
 
 $("#resize-button").addEventListener("click", function (e) {
@@ -78,10 +81,12 @@ $("#random-button").addEventListener("click", (e) => {
 
 $("#resize-text").textContent = `${initialSize}x${initialSize}`;
 $("#resize-slider").addEventListener("input", function (e) {
-  $("#resize-text").textContent = `${this.value}x${this.value}`;
+  let size = validSizes[this.value];
+  $("#resize-text").textContent = `${size}x${size}`;
 });
 
 $("#resize-slider").addEventListener("mouseup", function (e) {
-  console.log(`Refill board: ${this.value}`);
-  fillBoard(this.value);
+  let size = validSizes[this.value];
+  console.log(`Refill board: ${size}`);
+  fillBoard(size);
 });
