@@ -47,9 +47,9 @@
     - [x] Change color to red
     - [x] Change font and font-color to blue
     - [x] Rotate
-- [ ] bottom buttons
-    - [ ] make buttons long and rounded
-    - [ ] Add shadow
-    - [ ] Add text beneath buttons
-    - [ ] Make text blue
+- [x] bottom buttons
+    - [x] make buttons long and rounded
+    - [x] Add shadow
+    - [x] Add text beneath buttons
+    - [x] Make text blue
 - [x] Add color to color selection buttons
