@@ -53,14 +53,6 @@ function fillBoard(size) {
 const initialSize = validSizes[$("#resize-slider").value];
 fillBoard(initialSize, initialSize);
 
-$("#resize-button").addEventListener("click", function (e) {
-  let size;
-  do {
-    size = +prompt("Enter board size: ");
-  } while (isNaN(size));
-  fillBoard(size, size);
-});
-
 $$("#color-select>button").forEach((colorButton) => {
   const colorKey = colorButton.getAttribute("key-value");
   colorButton.style.backgroundColor = gameboyColors[colorKey];
