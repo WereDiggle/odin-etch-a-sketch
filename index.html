@@ -13,18 +13,22 @@
     </div>
     <div id="title">ETCH-A-SKETCH</div>
     <div id="controls">
-      <div id="color-select">
-        <button key-value="0" class="color-button"></button>
-        <button key-value="1" class="color-button"></button>
-        <button key-value="2" class="color-button"></button>
-        <button key-value="3" class="color-button"></button>
+      <div id="top-controls">
+        <div id="color-select">
+          <button key-value="0" class="color-button"></button>
+          <button key-value="1" class="color-button"></button>
+          <button key-value="2" class="color-button"></button>
+          <button key-value="3" class="color-button"></button>
+        </div>
+        <div id="resize">
+          <input id="resize-slider" type="range" min="0" max="4" value="2">
+          <div id="resize-text"></div>
+        </div>
       </div>
-      <div id="resize">
-        <input id="resize-slider" type="range" min="0" max="4" value="2">
-        <div id="resize-text"></div>
+      <div id="bottom-controls">
+        <button id="random-button">RANDOM</button>
+        <button id="clear-button">CLEAR</button>
       </div>
-      <button id="random-button">RANDOM</button>
-      <button id="clear-button">CLEAR</button>
     </div>
   </div>
 </body>
