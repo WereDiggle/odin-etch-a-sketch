@@ -6,8 +6,8 @@
 - [ ] Resize canvas slider
 - [x] Select color to use 
 - [x] Fill cell animation
-- [ ] Support color randomizer
-- [ ] Clear button clears board
+- [x] Support color randomizer
+- [x] Clear button clears board
 
 ## TODO: design
 - [ ] Resize padding
