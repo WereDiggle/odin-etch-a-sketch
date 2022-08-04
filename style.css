@@ -24,6 +24,9 @@ body {
     justify-content: center;
     background-color: #575763;
     padding: 40px 81px;
+    border-radius: 20px 20px 80px 20px;
+    box-shadow: 1px 1px 0px 0px black;
+    border: 3px double goldenrod;
 }
 
 #drawboard {

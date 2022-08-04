@@ -22,9 +22,9 @@
 - [x] Chasis style
     - [x] Round corners
     - [x] Drop shadows
-- [ ] Face style
-    - [ ] Round corners
-    - [ ] borders
+- [x] Face style
+    - [x] Round corners
+    - [x] borders
 - [ ] Add inset shadows to screen
 - [ ] Face text
     - [ ] Add "DOT MATRIX WITH STEREO SOUND"
