@@ -193,7 +193,9 @@ body {
     box-shadow: inset 1px 1px 1px 0px black;
 }
 
-#resize-slider::-webkit-slider-thumb {
+#resize-slider::-webkit-slider-thumb,
+#resize-slider::-moz-range-thumb {
+    -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
     width: 4rem;
