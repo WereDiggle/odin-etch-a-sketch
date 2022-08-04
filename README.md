@@ -42,11 +42,11 @@
     - [x] Display hand cursor on hover
     - [x] Add some kind of hover effect
     - [x] Add some kind of pressed down effect (shadows?)
-- [ ] Resize slider
-    - [ ] Increase side
-    - [ ] Change color to red
-    - [ ] Change font and font-color to blue
-    - [ ] Rotate
+- [x] Resize slider
+    - [x] Increase size
+    - [x] Change color to red
+    - [x] Change font and font-color to blue
+    - [x] Rotate
 - [ ] bottom buttons
     - [ ] make buttons long and rounded
     - [ ] Add shadow
