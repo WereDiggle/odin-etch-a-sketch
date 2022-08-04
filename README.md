@@ -1,5 +1,7 @@
 # odin-etch-a-sketch
 
+[Live demo](https://werediggle.github.io/odin-etch-a-sketch/)
+
 ## TODO: functionality
 - [x] Cell sizes change to keep total board size the same
 - [x] Only fill in cells on mousedown
