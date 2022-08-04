@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 45px 0px 70px;
+    padding: 70px 45px 0px 45px;
     width: 522px;
     height: 865px;
     box-sizing: border-box;
@@ -21,14 +21,59 @@ body {
 
 #face {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #575763;
-    padding: 40px 81px;
+    width: 428px;
+    height: 346px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    /*padding: 40px 81px;*/
     border-radius: 20px 20px 80px 20px;
     box-shadow: 1px 1px 0px 0px black;
     border: 3px double goldenrod;
     position: relative;
     z-index: 10;
+}
+
+#screen-top {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    box-sizing: border-box;
+    margin: 10px;
+    height: 40px;
+    color: #9396a0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.line-top {
+    background-color: #721250;
+    height: 2px;
+}
+
+.line-bottom {
+    background-color: #07024c;
+    height: 2px;
+}
+
+#line-left {
+    flex: 2.5;
+}
+
+#line-right {
+    flex: 1;
 }
 
 #drawboard {

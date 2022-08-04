@@ -26,9 +26,9 @@
     - [x] Round corners
     - [x] borders
 - [x] Add inset shadows to screen
-- [ ] Face text
-    - [ ] Add "DOT MATRIX WITH STEREO SOUND"
-    - [ ] Add red and blue lines
+- [x] Face text
+    - [x] Add "DOT MATRIX WITH STEREO SOUND"
+    - [x] Add red and blue lines
 - [ ] Battery indicator
     - [ ] Make a little dot
     - [ ] Font, color, size for "BATTERY" text
