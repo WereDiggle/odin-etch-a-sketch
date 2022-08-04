@@ -29,9 +29,9 @@
 - [x] Face text
     - [x] Add "DOT MATRIX WITH STEREO SOUND"
     - [x] Add red and blue lines
-- [ ] Battery indicator
-    - [ ] Make a little dot
-    - [ ] Font, color, size for "BATTERY" text
+- [x] Battery indicator
+    - [x] Make a little dot
+    - [x] Font, color, size for "BATTERY" text
 - [ ] OdintendoETCH-A-SKETCH
     - [ ] find font for Odintendo
     - [ ] find font for ETCH-A-SKETCH
