@@ -80,6 +80,7 @@ body {
 }
 
 #screen-container {
+    pointer-events: none;
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -159,6 +160,11 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: stretch;
+}
+
+#controls button,
+#controls input {
+    cursor: pointer;
 }
 
 #top-controls {
