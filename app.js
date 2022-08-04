@@ -2,7 +2,12 @@ const $ = (q) => document.querySelector(q);
 const $$ = (q) => document.querySelectorAll(q);
 
 const validSizes = [8, 16, 32, 64, 128];
-const gameboyColors = ["#9bbc0f", "#8bac0f", "#306230", "#0f380f"];
+const gameboyColors = [
+  "rgb(155, 188, 15)",
+  "rgb(139, 172, 15)",
+  "rgb(48, 98, 48)",
+  "rgb(15, 56, 15)",
+];
 var curColor = gameboyColors[3];
 
 function getRandColor() {
@@ -17,7 +22,12 @@ document.body.onmouseup = () => {
 
 function fillCell(cell) {
   if (curColor === "random") {
-    cell.style.backgroundColor = getRandColor();
+    //cell.style.backgroundColor = getRandColor();
+    let curIndex = gameboyColors.indexOf(cell.style.backgroundColor);
+    cell.style.backgroundColor =
+      gameboyColors[Math.min(curIndex + 1, gameboyColors.length - 1)];
+    // Find current index of current background color
+    // Increase by 1, max len-1 of gameboyColors
   } else {
     cell.style.backgroundColor = curColor;
   }
@@ -30,13 +40,13 @@ function fillBoard(size) {
   // Add new cells
   // TOTAL width/height = 500
   let cellSize = Math.floor(256 / size);
-  let remainder = 256 % size;
   console.log(`cellSize: ${cellSize}`);
   $("#drawboard").style.gridTemplateColumns = `repeat(${size}, ${cellSize}px)`;
   $("#drawboard").style.gridTemplateRows = `repeat(${size}, ${cellSize}px)`;
   for (let i = 0; i < size * size; i++) {
     let cell = document.createElement("button");
     cell.setAttribute("draggable", false);
+    cell.style.backgroundColor = gameboyColors[0];
     cell.addEventListener("mouseover", function (e) {
       if (mouseDown > 0) {
         fillCell(this);

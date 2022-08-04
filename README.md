@@ -12,6 +12,7 @@
 - [x] Fill cell animation
 - [x] Support color randomizer
 - [x] Clear button clears board
+- [x] Random feature fills in color
 
 ## TODO: bugs
 - [x] Fix screen size changing slightly between resizes
