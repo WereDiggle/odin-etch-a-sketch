@@ -2,6 +2,8 @@
 
 [Live demo](https://werediggle.github.io/odin-etch-a-sketch/)
 
+![Gameboy screenshot](screenshot.PNG?raw=true "Gameboy screenshot")
+
 ## TODO: functionality
 - [x] Cell sizes change to keep total board size the same
 - [x] Only fill in cells on mousedown
