@@ -19,12 +19,37 @@
     - [x] Increase size of color buttons
     - [x] Center resize slider
     - [x] Center random and clear buttons
-- [ ] Round bottom left corner
-- [ ] Rotate random button
-- [ ] Rotate clear button
-- [ ] Rotate resize slider
+- [ ] Chasis style
+    - [ ] Round corners
+    - [ ] Drop shadows
+- [ ] Face style
+    - [ ] Round corners
+    - [ ] borders
+- [ ] Add inset shadows to screen
+- [ ] Face text
+    - [ ] Add "DOT MATRIX WITH STEREO SOUND"
+    - [ ] Add red and blue lines
+- [ ] Battery indicator
+    - [ ] Make a little dot
+    - [ ] Font, color, size for "BATTERY" text
+- [ ] OdintendoETCH-A-SKETCH
+    - [ ] find font for Odintendo
+    - [ ] find font for ETCH-A-SKETCH
+    - [ ] italics for ETCH-A-SKETCH
+    - [ ] Adjust alignment to the left
+    - [ ] Adjust size of text
+- [ ] Color select buttons
+    - [ ] Display hand cursor on hover
+    - [ ] Add some kind of hover effect
+    - [ ] Add some kind of pressed down effect (shadows?)
+- [ ] Resize slider
+    - [ ] Increase side
+    - [ ] Change color to red
+    - [ ] Change font and font-color to blue
+    - [ ] Rotate
+- [ ] bottom buttons
+    - [ ] make buttons long and rounded
+    - [ ] Add shadow
+    - [ ] Add text beneath buttons
+    - [ ] Make text blue
 - [x] Add color to color selection buttons
-- [ ] Add font for "odintendoETCH-A-SKETCH" text
-- [ ] Add battery indicator to left of screen
-- [ ] Add little lines above screen
-- [ ] Add "DOT MATRIX WITH STEREO SOUND" above screen
