@@ -10,7 +10,7 @@
 - [x] Clear button clears board
 
 ## TODO: bugs
-- [ ] Fix screen size changing slightly between resizes
+- [x] Fix screen size changing slightly between resizes
 
 ## TODO: design
 - [ ] Resize padding
