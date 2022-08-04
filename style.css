@@ -128,6 +128,30 @@ body {
     transition: all 0.3s;
 }
 
+#title {
+    align-self: flex-start;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: #08167a;
+    font-weight: 500;
+}
+
+#title>b {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+#title>sub {
+    font-size: 10px;
+}
+
+#title>span {
+    margin: 0px;
+}
+
 #controls {
     width: 400px;
     height: 400px;

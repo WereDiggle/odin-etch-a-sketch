@@ -32,12 +32,12 @@
 - [x] Battery indicator
     - [x] Make a little dot
     - [x] Font, color, size for "BATTERY" text
-- [ ] OdintendoETCH-A-SKETCH
-    - [ ] find font for Odintendo
-    - [ ] find font for ETCH-A-SKETCH
-    - [ ] italics for ETCH-A-SKETCH
-    - [ ] Adjust alignment to the left
-    - [ ] Adjust size of text
+- [x] OdintendoETCH-A-SKETCH
+    - [x] find font for Odintendo
+    - [x] find font for ETCH-A-SKETCH
+    - [x] italics for ETCH-A-SKETCH
+    - [x] Adjust alignment to the left
+    - [x] Adjust size of text
 - [ ] Color select buttons
     - [ ] Display hand cursor on hover
     - [ ] Add some kind of hover effect
