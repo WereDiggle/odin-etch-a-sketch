@@ -3,11 +3,14 @@
 ## TODO: functionality
 - [x] Cell sizes change to keep total board size the same
 - [x] Only fill in cells on mousedown
-- [ ] Resize canvas slider
+- [x] Resize canvas slider
 - [x] Select color to use 
 - [x] Fill cell animation
 - [x] Support color randomizer
 - [x] Clear button clears board
+
+## TODO: bugs
+- [ ] Fix screen size changing slightly between resizes
 
 ## TODO: design
 - [ ] Resize padding
