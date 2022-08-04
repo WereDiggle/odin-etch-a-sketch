@@ -22,16 +22,16 @@ function fillCell(cell) {
   }
 }
 
-function fillBoard(nRows, nCols) {
+function fillBoard(size) {
   // Clear old cells
   $$("#drawboard>button").forEach((cell) => $("#drawboard").removeChild(cell));
 
   // Add new cells
   // TOTAL width/height = 500
-  let cellSize = Math.floor(300 / nRows);
-  $("#drawboard").style.gridTemplateColumns = `repeat(${nCols}, ${cellSize}px)`;
-  $("#drawboard").style.gridTemplateRows = `repeat(${nRows}, ${cellSize}px)`;
-  for (let i = 0; i < nRows * nCols; i++) {
+  let cellSize = Math.floor(300 / size);
+  $("#drawboard").style.gridTemplateColumns = `repeat(${size}, ${cellSize}px)`;
+  $("#drawboard").style.gridTemplateRows = `repeat(${size}, ${cellSize}px)`;
+  for (let i = 0; i < size * size; i++) {
     let cell = document.createElement("button");
     cell.setAttribute("draggable", false);
     cell.addEventListener("mouseover", function (e) {
@@ -47,7 +47,8 @@ function fillBoard(nRows, nCols) {
   }
 }
 
-fillBoard(16, 16);
+const initialSize = $("#resize-slider").value;
+fillBoard(initialSize, initialSize);
 
 $("#resize-button").addEventListener("click", function (e) {
   let size;
@@ -73,4 +74,14 @@ $("#clear-button").addEventListener("click", (e) => {
 
 $("#random-button").addEventListener("click", (e) => {
   curColor = "random";
+});
+
+$("#resize-text").textContent = `${initialSize}x${initialSize}`;
+$("#resize-slider").addEventListener("input", function (e) {
+  $("#resize-text").textContent = `${this.value}x${this.value}`;
+});
+
+$("#resize-slider").addEventListener("mouseup", function (e) {
+  console.log(`Refill board: ${this.value}`);
+  fillBoard(this.value);
 });
