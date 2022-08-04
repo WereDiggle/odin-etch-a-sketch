@@ -25,7 +25,7 @@
 - [x] Face style
     - [x] Round corners
     - [x] borders
-- [ ] Add inset shadows to screen
+- [x] Add inset shadows to screen
 - [ ] Face text
     - [ ] Add "DOT MATRIX WITH STEREO SOUND"
     - [ ] Add red and blue lines
