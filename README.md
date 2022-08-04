@@ -19,9 +19,9 @@
     - [x] Increase size of color buttons
     - [x] Center resize slider
     - [x] Center random and clear buttons
-- [ ] Chasis style
-    - [ ] Round corners
-    - [ ] Drop shadows
+- [x] Chasis style
+    - [x] Round corners
+    - [x] Drop shadows
 - [ ] Face style
     - [ ] Round corners
     - [ ] borders
