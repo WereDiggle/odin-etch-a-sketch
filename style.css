@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 45px 70px 45px;
+    padding: 70px 45px 0px 45px;
     width: 522px;
     height: 865px;
     box-sizing: border-box;
@@ -209,6 +209,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 70px;
 }
 
 #color-select {
